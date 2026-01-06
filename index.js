@@ -1,5 +1,18 @@
-// template_oyden5m
-// service_a34bzbl
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    const logo = document.querySelector(" .personal-logo--light");
+    contrastToggle = !contrastToggle;    
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+        logo.style.opacity = 0;   
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+        logo.style.opacity = 1;        
+    }
+}
 
 function contact(event) {
     event.preventDefault();
@@ -22,7 +35,6 @@ function contact(event) {
     })
 }
 
-let isModalOpen = false;
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;        
