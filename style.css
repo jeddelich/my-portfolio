@@ -428,14 +428,14 @@ MODAL
 
 .modal__languages {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .modal__language {
   width: 25%;
   max-width: 100px;
-  padding: 12px;
+  padding: 12px 32px 12px 0;
   position: relative;
   display: flex;
   flex-direction: column;
