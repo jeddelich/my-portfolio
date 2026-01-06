@@ -126,34 +126,38 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-          <h3 class="modal__title modal__title--contact">
+          <h3 class="modal__title modal__title--contact centered">
             Let's have a chat!
           </h3>
-          <h4 class="modal__subtitle modal__subtitle--contact">
+          <h4 class="modal__subtitle modal__subtitle--contact centered">
             I'm currently open to new opportunities.
           </h4>
           <form action="" id="contact__form">
-            <div class="form__item">
-              <label class="form__item--label">Name</label>
+            <div class="form__item form__item--row">
+              <label class="form__item--label">Name:</label>
               <input type="text" class="input" name="user_name" required></input>
             </div>
-            <div class="form__item">
-              <label class="form__item--label">Email</label>
+            <div class="form__item form__item--row">
+              <label class="form__item--label">Email:</label>
               <input type="email" class="input" name="user_email" required></input>
             </div>
             <div class="form__item">
-              <label class="form__item--label">Message</label>
+              <label class="form__item--label centered">Message:</label>
               <textarea type="text" class="input" name="message" required></textarea>
             </div>
-            <button id="contact__submit" class="form__submit">
-              Send it my way
-            </button>
+            <div class="form__submit--wrapper">
+              <button id="contact__submit" class="form__submit">
+                Send it my way
+              </button>
+            </div>
           </form>
           <div class="modal__overlay modal__overlay--loading">
             <i class="fa-solid fa-spinner"></i>
           </div>
           <div class="modal__overlay modal__overlay--success">
-            Thanks for the message! Looking forward to speaking to you soon.
+            Thanks for the message! 
+            <br>
+            Looking forward to speaking to you soon.
           </div>
         </div>
         <i class="fa-solid fa-times modal__exit click"></i>
