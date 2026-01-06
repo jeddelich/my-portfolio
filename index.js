@@ -21,3 +21,13 @@ function contact(event) {
         alert("The email service is temporarily unavailable. Please contact me directly at jeddelich@gmail.com.")
     })
 }
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;        
+        return document.body.classList.remove("modal--open");
+    }
+    isModalOpen = true;    
+    document.body.classList += " modal--open"
+}

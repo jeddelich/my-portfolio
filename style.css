@@ -132,6 +132,22 @@ label {
     width: 100%;
 }
 
+nav,
+.scroll,
+.header {
+  visibility: visible;
+  opacity: 1;
+  transition: all 600ms 600ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 400ms;
+}
+
 /* 
 
 LANDING PAGE
@@ -189,9 +205,9 @@ LANDING PAGE
 }
 
 .mail__btn {
-  width: 36px;
-  height: 36px;
-  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
   border-radius: 50%;
   background-color: #242424;
   border: none;
@@ -199,8 +215,8 @@ LANDING PAGE
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 15.5%;
-  right: 5.5%;
+  bottom: 24px;
+  right: 32px;
 }
 
 .mail__btn i {
@@ -402,10 +418,23 @@ MODAL
   width: 90%;
   max-width: 1100px;
   height: 400px;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   border-radius: 20px;
   overflow: hidden;  
   display: flex;
+  visibility: hidden;
+  z-index: -1;
+  transition: visibility 750ms, z-index 750ms, box-shadow 500ms ease;
+}
+
+.modal--open .modal__about,
+.modal--open .modal__contact {
+  transform: translateX(0);
+}
+
+.modal--open .modal{
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  visibility: visible;
 }
 
 .modal__half {
@@ -415,15 +444,18 @@ MODAL
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: all 300ms ease-in;
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
+  transform: translateX(-110%);
 }
 
 .modal__contact {
   background-color: #242424;
   color: white;
+  transform: translateX(110%);
 }
 
 .modal__languages {
@@ -536,7 +568,7 @@ MODAL
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -558,6 +590,7 @@ MODAL
 
 .modal__overlay--visible {
   z-index: 1;
+  display: flex;
 }
 
 .fa-spinner {
