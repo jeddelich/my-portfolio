@@ -667,6 +667,11 @@ PROJECTS
 
 */
 
+#projects {
+  z-index: 2;
+  position: relative;
+}
+
 .section__title {
   font-size: 40px;
   text-align: center;
@@ -756,6 +761,8 @@ footer {
     background-color: #242424;
     display: flex;
     padding: 6% 0;
+    z-index: 2;
+    position: relative;
 }
 
 .footer__row {
@@ -787,4 +794,65 @@ footer {
 .footer__social--link,
 .footer__copyright {
     color: white;
+}
+
+/* 
+
+SHAPES 
+
+*/
+
+.shape {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+}
+
+.fa-spiral {
+  color: #3ddc97;
+}
+
+.shape--0 {
+  top: 15vh;
+  left: 5vw;
+}
+
+.shape--1 {
+  top: 15vh;
+  left: 50vw;
+}
+
+.shape--2 {
+  top: 15vh;
+  left: 80vw;
+}
+
+.shape--3 {
+  top: 50vh;
+  left: 5vw;
+}
+
+.shape--4 {
+  top: 50vh;
+  left: 50vw;
+}
+
+.shape--5 {
+  top: 50vh;
+  left: 80vw;
+}
+
+.shape--6 {
+  top: 80vh;
+  left: 5vw;
+}
+
+.shape--7 {
+  top: 80vh;
+  left: 50vw;
+}
+
+.shape--8 {
+  top: 80vh;
+  left: 80vw;
 }
