@@ -75,11 +75,11 @@ button {
 
 input,
 textarea {
-  width: 100%;
+  width: 75%;
   background-color: #242424;
   color: white;
   outline: none;
-  border: 3px solid #c0c4cc;
+  border: 1px solid #c0c4cc;
   height: 20px;
   transition: all 300ms ease;
 }
@@ -106,7 +106,7 @@ textarea {
 
 label {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .link__hover-effect {
@@ -575,6 +575,10 @@ MODAL
   margin-bottom: 24px;  
 }
 
+.form__item:nth-child(3) label {
+  margin-bottom: 8px;
+}
+
 .form__item--row {
   display: flex;
 }
@@ -598,11 +602,12 @@ MODAL
 .form__submit {
   background-color: #f06449;
   border: 2px solid #f06449;
+  border-radius: 2px;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   width: 100%;
-  max-width: 200px;
-  padding: 8px 16px;
+  max-width: 150px;
+  padding: 8px 0;
   font-size: 16px;
   transition: all 300ms ease;
 }
