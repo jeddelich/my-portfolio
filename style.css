@@ -254,6 +254,7 @@ LANDING PAGE
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 24px;
   right: 32px;
@@ -888,6 +889,10 @@ SHAPES
 
 /* SMALL PHONES, TABLETS, BIG SMART PHONES */
 @media (max-width: 768px) {
+  .shape {
+    visibility: hidden;
+  }
+  
   .title {
     font-size: 48px;
   }
@@ -957,6 +962,14 @@ SHAPES
     font-size: 40px;
   }
   
+  .header__para {
+    font-size: 14px;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
   .nav__link:first-child {
     display: none;
   }
