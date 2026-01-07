@@ -936,3 +936,44 @@ SHAPES
     margin-right: 72px;
   }
 }
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .title {
+    font-size: 40px;
+  }
+  
+  .nav__link:first-child {
+    display: none;
+  }
+
+  .mail__btn {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project__description--subtitle {
+    margin-bottom: 8px;
+  }
+
+  .modal__exit {
+    right: 24px;
+  }
+  
+  .modal__title {
+    font-size: 20px;
+  }
+
+}
